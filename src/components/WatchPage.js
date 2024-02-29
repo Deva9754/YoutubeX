@@ -4,7 +4,6 @@ import { closeMenu } from "../utils/AppSlice";
 import { useSearchParams } from "react-router-dom";
 import CommentsContainer from "./CommentsContainer";
 import Livechat from "./LiveChat";
-// import CommentsContainer from "./CommentsContainer";
 
 const Watchpage = () => {
   //   console.log(info);
@@ -36,7 +35,6 @@ const Watchpage = () => {
           <Livechat />
         </div>
       </div>
-      {/* <CommentsContainer /> */}
     </div>
   );
 };
