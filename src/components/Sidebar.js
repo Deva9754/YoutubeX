@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-import Store from "../utils/Store";
 import { Link } from "react-router-dom";
 
 const Sidebar = ()=>{
