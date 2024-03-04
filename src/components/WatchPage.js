@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { closeMenu } from "../utils/AppSlice";
 import { useSearchParams } from "react-router-dom";
-import CommentsContainer from "./CommentsContainer";
 import Livechat from "./LiveChat";
 
 const Watchpage = () => {
@@ -16,7 +15,7 @@ const Watchpage = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(closeMenu());
-  }, []);
+  }, [dispatch]);
   return (
     <div className="flex flex-col w-full">
       <div className="px-5 flex w-full">
