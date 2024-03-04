@@ -29,7 +29,7 @@ const Header = () => {
       clearTimeout(timer);
     };
 
-  }, [searchQuery]);
+  });
 
   const getSearchSugsestions = async () => {
 
