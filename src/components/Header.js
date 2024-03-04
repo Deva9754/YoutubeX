@@ -27,7 +27,7 @@ const Header = () => {
     return () => {
       clearTimeout(timer);
     };
-  }, [searchQuery]);
+  });
 
   const getSearchSugsestions = async () => {
     const url = YOUTUBE_SEARCH_API + searchQuery;
