@@ -100,7 +100,7 @@ const Header = () => {
 
 <div className="col-span-1">
 <img
-className="h-8"
+className="h-8 cursor-pointer"
 alt="user"
 src="https://static-00.iconduck.com/assets.00/user-icon-1024x1024-dtzturco.png"
 />
