@@ -9,17 +9,16 @@
 
 //     <Provider store={Store}>
 //     <div className=''>
-    
+
 //       <Header/>
 //       <Body/>
-      
+
 //     </div>
 //     </Provider>
 //   );
 // }
 
 // export default App;
-
 
 import { Provider } from "react-redux";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -44,7 +43,6 @@ const appRouter = createBrowserRouter([
         path: "watch",
         element: <WatchPage />,
       },
-     
     ],
   },
 ]);
@@ -52,9 +50,11 @@ const appRouter = createBrowserRouter([
 function App() {
   return (
     <Provider store={store}>
-      <div className=" bg-black ">
+      <div className=" bg-black flex flex-col h-[100vh]">
         <Header />
-        <RouterProvider router={appRouter} />
+        <div className="flex-1">
+          <RouterProvider router={appRouter} />
+        </div>
 
         {/**
          *

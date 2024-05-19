@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 
 const Body = () => {
   return (
-    <div className=" ">
+    <div className="h-full">
       <Sidebar />
       <Outlet />
     </div>

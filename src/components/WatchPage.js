@@ -18,9 +18,9 @@ const Watchpage = () => {
     dispatch(closeMenu());
   }, [dispatch]);
   return (
-    <div className=" sm:flex sm:flex-col sm: w-full">
-      <div className="sm:px-5 sm:flex sm:w-full">
-        <div className="container">
+    <div className=" sm:flex sm:flex-col sm: w-full h-full">
+      <div className="sm:px-5 sm:flex sm:w-full h-full w-full">
+        <div className="container max-w-[100%] h-full">
           <iframe
             className="responsive-iframe"
             src={"https://www.youtube.com/embed/" + searchParams.get("v")}
