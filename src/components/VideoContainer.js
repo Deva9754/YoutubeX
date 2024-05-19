@@ -19,7 +19,7 @@ const VideoContainer = () => {
   };
 
   return (
-    <div className=" flex flex-wrap justify-center">
+    <div className=" flex flex-wrap justify-center h-full bg-black">
       {videos.length &&
         videos?.map((video) => (
           <Link to={"/watch?v=" + video.id} key={video.id}>
