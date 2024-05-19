@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    height: 100%;
+
+  }
+  
+  .responsive-iframe {
+    width: 70%;
+  }
+  
+ @media screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    
+      }
+      
+      .responsive-iframe {
+        width: 100%;
+      }
+   
+      
+  } 

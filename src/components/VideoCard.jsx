@@ -5,12 +5,14 @@ const VideoCard = ({ info }) => {
   const { channelTitle, title, thumbnails } = snippet;
 
   return (
-    <div className="p-2 m-2 w-72 shadow-lg ">
+    <div className="p-2 m-2 w-72 shadow-lg overflow-hidden flex-wrap items-center flex">
       <img className="rounded-lg" alt="thumbnail" src={thumbnails.medium.url} />
       <ul>
         <li className="font-bold py-2 text-white">{title}</li>
         <li className=" text-gray-500">{channelTitle}</li>
-        <li className=" text-gray-500">{Math.round(statistics.viewCount * 100)/1000000} views</li>
+        <li className=" text-gray-500">
+          {Math.round(statistics.viewCount * 100) / 1000000} views
+        </li>
       </ul>
     </div>
   );

@@ -26,7 +26,7 @@ const Livechat = () => {
   }, [dispatch]);
   return (
     <>
-      <div className="w-full h-[600px] ml-2 p-2 border border-black bg-slate-100 rounded-lg overflow-y-scroll flex flex-col-reverse">
+      <div className="w-full h-[400px] p-2 border border-black bg-slate-100 rounded-lg overflow-y-scroll flex flex-col-reverse">
         <div>
           {
             // Disclaimer: Don't use indexes as keys
